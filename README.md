@@ -11,7 +11,7 @@ Cache Memory is a special very high-speed memory. It is used to speed up and syn
 
 Cache memory is used to reduce the average time to access data from the Main memory. The cache is a smaller and faster memory which stores copies of the data from frequently used main memory locations.
 
-## Cache Mapping:
+### Cache Mapping -
 There are three different types of mapping used for the purpose of cache memory which are as follows: Direct mapping, Associative mapping, and Set-Associative mapping. These are explained below.
 
 ## Direct Mapping –
@@ -210,5 +210,5 @@ void main()
 	}
 }
 
-
+`
 ##### Thank You

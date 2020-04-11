@@ -1,11 +1,11 @@
-## Memory Mapping of Cache in Computer Organization and Architecture
+# Memory Mapping of Cache in Computer Organization and Architecture
 
 This is my lab implementation of Memory mapping in the following ways -
 - Direct 
 - Associative
 - Set Associative
 
-### Theory :
+## Theory :
 
 Cache Memory is a special very high-speed memory. It is used to speed up and synchronizing with high-speed CPU. Cache memory is costlier than main memory or disk memory but economical than CPU registers. Cache memory is an extremely fast memory type that acts as a buffer between RAM and the CPU. It holds frequently requested data and instructions so that they are immediately available to the CPU when needed.
 
@@ -14,7 +14,7 @@ Cache memory is used to reduce the average time to access data from the Main mem
 ### Cache Mapping -
 There are three different types of mapping used for the purpose of cache memory which are as follows: Direct mapping, Associative mapping, and Set-Associative mapping. These are explained below.
 
-## Direct Mapping –
+### Direct Mapping –
 The simplest technique, known as direct mapping, maps each block of main memory into only one possible cache line. or
 In Direct mapping, assigne each memory block to a specific line in the cache. If a line is previously taken up by a memory block when a new block needs to be loaded, the old block is trashed. An address space is split into two parts index field and a tag field. The cache is used to store the tag field whereas the rest is stored in the main memory. Direct mapping's performance is directly proportional to the Hit ratio.
 
@@ -29,12 +29,12 @@ For purposes of cache access, each main memory address can be viewed as consisti
 ![Image](https://media.geeksforgeeks.org/wp-content/uploads/20190305171558/1232.png)
 ![Image](https://media.geeksforgeeks.org/wp-content/uploads/cache1.png)
 
-## Associative Mapping –
+### Associative Mapping –
 In this type of mapping, the associative memory is used to store content and addresses of the memory word. Any block can go into any line of the cache. This means that the word id bits are used to identify which word in the block is needed, but the tag becomes all of the remaining bits. This enables the placement of any word at any place in the cache memory. It is considered to be the fastest and the most flexible mapping form.
 
 ![Image](https://media.geeksforgeeks.org/wp-content/uploads/cache2.png)
 
-## Set-associative Mapping –
+### Set-associative Mapping –
 This form of mapping is an enhanced form of direct mapping where the drawbacks of direct mapping are removed. Set associative addresses the problem of possible thrashing in the direct mapping method. It does this by saying that instead of having exactly one line that a block can map to in the cache, we will group a few lines together creating a set. Then a block in memory can map to any one of the lines of a specific set..Set-associative mapping allows that each word that is present in the cache can have two or more words in the main memory for the same index address. Set associative cache mapping combines the best of direct and associative cache mapping techniques.
 In this case, the cache consists of a number of sets, each of which consists of a number of lines. The relationships are
 
@@ -51,7 +51,7 @@ k=number of lines in each set
 ![Image](https://media.geeksforgeeks.org/wp-content/uploads/20190305171821/setassociative.png)
 ![Image](https://media.geeksforgeeks.org/wp-content/uploads/cache4.png)
 
-# The below code is a C language implementation of Memory Mapping.
+### The below code is a C language implementation of Memory Mapping.
 
 ```markdown
 #include<stdio.h>
@@ -211,4 +211,4 @@ void main()
 }
 
 ```
-##### Thank You
+# Thank You
